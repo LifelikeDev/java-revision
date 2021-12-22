@@ -39,5 +39,6 @@ public class Main {
         System.out.println(products.size());
         System.out.println(products.isEmpty());
         System.out.println(products.contains(book));
+        System.out.println(products.contains(new Product("water", 122)));
     }
 }
