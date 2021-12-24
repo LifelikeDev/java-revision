@@ -1,8 +1,14 @@
 public class Product {
+    private final int id;
     private final String name;
     private final int weight;
 
-    public Product(String name, int weight) {
+    public int getId() {
+        return id;
+    }
+
+    public Product(int id, String name, int weight) {
+        this.id = id;
         this.name = name;
         this.weight = weight;
     }

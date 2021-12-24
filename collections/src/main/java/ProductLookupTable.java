@@ -5,6 +5,9 @@ public interface ProductLookupTable {
     // add a product
     void addProduct(Product product);
 
+    // remove a product
+    void removeProduct(Product product);
+
     // clear the list of products
     void clear();
 }

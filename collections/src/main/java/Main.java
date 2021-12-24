@@ -8,13 +8,13 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Some working stuff here");
 
-        Product book = new Product("book", 23);
-        Product phone = new Product("iPhone", 34);
+        Product book = new Product("3234", "book", 23);
+        Product phone = new Product("3222", "iPhone", 34);
 
         Collection<Product> products = new ArrayList<>();
         products.add(book);
         products.add(phone);
-        products.add(new Product("water", 122));
+        products.add(new Product("2223", "water", 122));
 
         System.out.println(products);
         System.out.println();
@@ -39,6 +39,6 @@ public class Main {
         System.out.println(products.size());
         System.out.println(products.isEmpty());
         System.out.println(products.contains(book));
-        System.out.println(products.contains(new Product("water", 122)));
+        System.out.println(products.contains(new Product("224","water", 122)));
     }
 }
