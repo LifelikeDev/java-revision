@@ -3,6 +3,8 @@ package streams;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class Main {
 
@@ -18,6 +20,10 @@ public class Main {
         goods.add(goodThree);
 
         namesOfSortedLightWeightGoods(goods);
+        System.out.println();
+        System.out.println(getListOfSortedLightWeightGoods(goods));
+        System.out.println();
+        
     }
 
     private static void namesOfSortedLightWeightGoods(final List<Good> goods) {
@@ -26,6 +32,13 @@ public class Main {
                 .sorted(Comparator.comparingDouble(Good::getWeight))
                 .map(Good::getName)
                 .forEach(System.out::println);
+    }
+
+    private static List<Good> getListOfSortedLightWeightGoods(final List<Good> goods) {
+        return goods.stream()
+                .filter(good -> good.getWeight() < 30)
+                .sorted(Comparator.comparingDouble(Good::getWeight))
+                .collect(Collectors.toList());
     }
 
 }
