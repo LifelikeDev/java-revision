@@ -5,13 +5,13 @@ import java.util.stream.Collectors;
 
 public class Main {
 
+        public static Good goodOne = new Good(1001L, "Luggage", 34.5);
+        public static Good goodTwo = new Good(1004L, "Food", 22.5);
+        public static Good goodThree = new Good(1005L, "Clothing", 17.5);
+
     public static void main(String[] args) {
+
         List<Good> goods = new ArrayList<>();
-
-        Good goodOne = new Good(1001L, "Luggage", 34.5);
-        Good goodTwo = new Good(1004L, "Food", 22.5);
-        Good goodThree = new Good(1005L, "Clothing", 17.5);
-
         Collections.addAll(goods, goodOne, goodTwo, goodThree);
 
 //        goods.add(goodOne);
