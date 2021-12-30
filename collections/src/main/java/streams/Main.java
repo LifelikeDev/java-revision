@@ -1,9 +1,6 @@
 package streams;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -15,10 +12,14 @@ public class Main {
         Good goodTwo = new Good(1004L, "Food", 22.5);
         Good goodThree = new Good(1005L, "Clothing", 17.5);
 
-        goods.add(goodOne);
-        goods.add(goodTwo);
-        goods.add(goodThree);
+        Collections.addAll(goods, goodOne, goodTwo, goodThree);
 
+//        goods.add(goodOne);
+//        goods.add(goodTwo);
+//        goods.add(goodThree);
+
+        System.out.println(goods);
+        System.out.println();
         namesOfSortedLightWeightGoods(goods);
         System.out.println();
         System.out.println(getListOfSortedLightWeightGoods(goods));
