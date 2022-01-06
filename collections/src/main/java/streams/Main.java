@@ -18,13 +18,13 @@ public class Main {
 //        goods.add(goodTwo);
 //        goods.add(goodThree);
 
-        System.out.println(goods);
-        System.out.println();
-        namesOfSortedLightWeightGoods(goods);
-        System.out.println();
-        System.out.println(getListOfSortedLightWeightGoods(goods));
-        System.out.println();
-        System.out.println(getMapOfSortedLightWeightGoods(goods));
+//        System.out.println(goods);
+//        System.out.println();
+//        namesOfSortedLightWeightGoods(goods);
+//        System.out.println();
+//        System.out.println(getListOfSortedLightWeightGoods(goods));
+//        System.out.println();
+//        System.out.println(getMapOfSortedLightWeightGoods(goods));
 
     }
 
